@@ -10,6 +10,7 @@ function Calculadora() {
   //var sign = 0
   var resultado = document.getElementById('display')
   var reset = document.getElementById('on')
+  var raiz = document.getElementById('raiz')
   var signo = document.getElementById('sign')
   var igual = document.getElementById('igual')
   var suma = document.getElementById('mas')
@@ -27,6 +28,121 @@ function Calculadora() {
   var tres = document.getElementById('3')
   var dos = document.getElementById('2')
   var uno = document.getElementById('1')
+
+  uno.addEventListener("mousedown",function(){
+    uno.setAttribute("style","transform:scale(0.95,0.95)")
+  })
+  uno.addEventListener("mouseup",function(){
+    uno.setAttribute("style","transform:scale(1,1)")
+  })
+  dos.addEventListener("mousedown",function(){
+    dos.setAttribute("style","transform:scale(0.95,0.95)")
+  })
+  dos.addEventListener("mouseup",function(){
+    dos.setAttribute("style","transform:scale(1,1)")
+  })
+  tres.addEventListener("mousedown",function(){
+    tres.setAttribute("style","transform:scale(0.95,0.95)")
+  })
+  tres.addEventListener("mouseup",function(){
+    tres.setAttribute("style","transform:scale(1,1)")
+  })
+  cuatro.addEventListener("mousedown",function(){
+    cuatro.setAttribute("style","transform:scale(0.95,0.95)")
+  })
+  cuatro.addEventListener("mouseup",function(){
+    cuatro.setAttribute("style","transform:scale(1,1)")
+  })
+  cinco.addEventListener("mousedown",function(){
+    cinco.setAttribute("style","transform:scale(0.95,0.95)")
+  })
+  cinco.addEventListener("mouseup",function(){
+    cinco.setAttribute("style","transform:scale(1,1)")
+  })
+  seis.addEventListener("mousedown",function(){
+    seis.setAttribute("style","transform:scale(0.95,0.95)")
+  })
+  seis.addEventListener("mouseup",function(){
+    seis.setAttribute("style","transform:scale(1,1)")
+  })
+  siete.addEventListener("mousedown",function(){
+    siete.setAttribute("style","transform:scale(0.95,0.95)")
+  })
+  siete.addEventListener("mouseup",function(){
+    siete.setAttribute("style","transform:scale(1,1)")
+  })
+  ocho.addEventListener("mousedown",function(){
+    ocho.setAttribute("style","transform:scale(0.95,0.95)")
+  })
+  ocho.addEventListener("mouseup",function(){
+    ocho.setAttribute("style","transform:scale(1,1)")
+  })
+  nueve.addEventListener("mousedown",function(){
+    nueve.setAttribute("style","transform:scale(0.95,0.95)")
+  })
+  nueve.addEventListener("mouseup",function(){
+    nueve.setAttribute("style","transform:scale(1,1)")
+  })
+  cero.addEventListener("mousedown",function(){
+    cero.setAttribute("style","transform:scale(0.95,0.95)")
+  })
+  cero.addEventListener("mouseup",function(){
+    cero.setAttribute("style","transform:scale(1,1)")
+  })
+  reset.addEventListener("mousedown",function(){
+    reset.setAttribute("style","transform:scale(0.95,0.95)")
+  })
+  reset.addEventListener("mouseup",function(){
+    reset.setAttribute("style","transform:scale(1,1)")
+  })
+  signo.addEventListener("mousedown",function(){
+    signo.setAttribute("style","transform:scale(0.95,0.95)")
+  })
+  signo.addEventListener("mouseup",function(){
+    signo.setAttribute("style","transform:scale(1,1)")
+  })
+  igual.addEventListener("mousedown",function(){
+    igual.setAttribute("style","transform:scale(0.95,0.95)")
+  })
+  igual.addEventListener("mouseup",function(){
+    igual.setAttribute("style","transform:scale(1,1)")
+  })
+  suma.addEventListener("mousedown",function(){
+    suma.setAttribute("style","transform:scale(0.95,0.95)")
+  })
+  suma.addEventListener("mouseup",function(){
+    suma.setAttribute("style","transform:scale(1,1)")
+  })
+  resta.addEventListener("mousedown",function(){
+    resta.setAttribute("style","transform:scale(0.95,0.95)")
+  })
+  resta.addEventListener("mouseup",function(){
+    resta.setAttribute("style","transform:scale(1,1)")
+  })
+  multiplica.addEventListener("mousedown",function(){
+    multiplica.setAttribute("style","transform:scale(0.95,0.95)")
+  })
+  multiplica.addEventListener("mouseup",function(){
+    multiplica.setAttribute("style","transform:scale(1,1)")
+  })
+  divide.addEventListener("mousedown",function(){
+    divide.setAttribute("style","transform:scale(0.95,0.95)")
+  })
+  divide.addEventListener("mouseup",function(){
+    divide.setAttribute("style","transform:scale(1,1)")
+  })
+  punto.addEventListener("mousedown",function(){
+    punto.setAttribute("style","transform:scale(0.95,0.95)")
+  })
+  punto.addEventListener("mouseup",function(){
+    punto.setAttribute("style","transform:scale(1,1)")
+  })
+  raiz.addEventListener("mousedown",function(){
+    raiz.setAttribute("style","transform:scale(0.95,0.95)")
+  })
+  raiz.addEventListener("mouseup",function(){
+    raiz.setAttribute("style","transform:scale(1,1)")
+  })
 
   signo.onclick = function(e){
     //if(sign==0){
