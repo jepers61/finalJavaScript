@@ -38,6 +38,11 @@ function Calculadora() {
           //sign = 1
         }
       }
+      if(resultado.textContent.length>8){
+        var viejo = resultado.textContent
+        var nuevo = viejo.slice(0,8)
+        resultado.textContent = nuevo
+      }
   }
 
   punto.onclick = function(e){
@@ -52,6 +57,11 @@ function Calculadora() {
       }
       unpunto = 1
     }
+    if(resultado.textContent.length>8){
+      var viejo = resultado.textContent
+      var nuevo = viejo.slice(0,8)
+      resultado.textContent = nuevo
+    }
   }
 
   uno.onclick = function(e){
@@ -62,6 +72,11 @@ function Calculadora() {
       fin = 0
     }else{
       resultado.textContent = resultado.textContent + "1"
+    }
+    if(resultado.textContent.length>8){
+      var viejo = resultado.textContent
+      var nuevo = viejo.slice(0,8)
+      resultado.textContent = nuevo
     }
   }
 
@@ -74,6 +89,11 @@ function Calculadora() {
     }else{
       resultado.textContent = resultado.textContent + "2"
     }
+    if(resultado.textContent.length>8){
+      var viejo = resultado.textContent
+      var nuevo = viejo.slice(0,8)
+      resultado.textContent = nuevo
+    }
   }
 
   tres.onclick = function(e){
@@ -84,6 +104,11 @@ function Calculadora() {
       fin = 0
     }else{
       resultado.textContent = resultado.textContent + "3"
+    }
+    if(resultado.textContent.length>8){
+      var viejo = resultado.textContent
+      var nuevo = viejo.slice(0,8)
+      resultado.textContent = nuevo
     }
   }
 
@@ -96,6 +121,11 @@ function Calculadora() {
     }else{
       resultado.textContent = resultado.textContent + "4"
     }
+    if(resultado.textContent.length>8){
+      var viejo = resultado.textContent
+      var nuevo = viejo.slice(0,8)
+      resultado.textContent = nuevo
+    }
   }
 
   cinco.onclick = function(e){
@@ -106,6 +136,11 @@ function Calculadora() {
       fin = 0
     }else{
       resultado.textContent = resultado.textContent + "5"
+    }
+    if(resultado.textContent.length>8){
+      var viejo = resultado.textContent
+      var nuevo = viejo.slice(0,8)
+      resultado.textContent = nuevo
     }
   }
 
@@ -118,6 +153,11 @@ function Calculadora() {
     }else{
       resultado.textContent = resultado.textContent + "6"
     }
+    if(resultado.textContent.length>8){
+      var viejo = resultado.textContent
+      var nuevo = viejo.slice(0,8)
+      resultado.textContent = nuevo
+    }
   }
 
   siete.onclick = function(e){
@@ -128,6 +168,11 @@ function Calculadora() {
       fin = 0
     }else{
       resultado.textContent = resultado.textContent + "7"
+    }
+    if(resultado.textContent.length>8){
+      var viejo = resultado.textContent
+      var nuevo = viejo.slice(0,8)
+      resultado.textContent = nuevo
     }
   }
 
@@ -140,6 +185,11 @@ function Calculadora() {
     }else{
       resultado.textContent = resultado.textContent + "8"
     }
+    if(resultado.textContent.length>8){
+      var viejo = resultado.textContent
+      var nuevo = viejo.slice(0,8)
+      resultado.textContent = nuevo
+    }
   }
 
   nueve.onclick = function(e){
@@ -150,6 +200,11 @@ function Calculadora() {
       fin = 0
     }else{
       resultado.textContent = resultado.textContent + "9"
+    }
+    if(resultado.textContent.length>8){
+      var viejo = resultado.textContent
+      var nuevo = viejo.slice(0,8)
+      resultado.textContent = nuevo
     }
   }
 
@@ -162,6 +217,11 @@ function Calculadora() {
     }else{
       resultado.textContent = resultado.textContent + "0"
     }
+    if(resultado.textContent.length>8){
+      var viejo = resultado.textContent
+      var nuevo = viejo.slice(0,8)
+      resultado.textContent = nuevo
+    }
   }
 
   reset.onclick = function(e){
@@ -170,24 +230,28 @@ function Calculadora() {
 
   suma.onclick = function(e){
     num1 = resultado.textContent
+    largo(num1)
     operador = "+"
     limpiar()
   }
 
   resta.onclick = function(e){
     num1 = resultado.textContent
+    largo(num1)
     operador = "-"
     limpiar()
   }
 
   multiplica.onclick = function(e){
     num1 = resultado.textContent
+    largo(num1)
     operador = "*"
     limpiar()
   }
 
   divide.onclick = function(e){
     num1 = resultado.textContent
+    largo(num1)
     operador = "/"
     limpiar()
   }
@@ -231,9 +295,22 @@ function Calculadora() {
     }
     //resetear()
     resultado.textContent = total
+    if(resultado.textContent.length>8){
+      var viejo = resultado.textContent
+      var nuevo = viejo.slice(0,8)
+      resultado.textContent = nuevo
+    }
     fin = 1
     unpunto = 0
     //sign = 0
   }
 
+  function largo(numero){
+    if(numero.length>8){
+      var viejo = numero
+      var nuevo = viejo.slice(0,8)
+      numero = nuevo
+      return numero
+    }
+  }
 }
